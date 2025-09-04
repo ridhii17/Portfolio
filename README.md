@@ -1,0 +1,32 @@
+# Responsive Portfolio Project
+
+Welcome to my personal portfolio showcasing my journey as a MERN Stack Developer and AR/VR enthusiast. This project demonstrates my skills in web development, 3D modeling, and immersive experiences.
+
+## 🚀 Live Demo
+
+Explore the live version of my portfolio:  
+👉 [https://ridhii17.github.io/Portfolio/](https://ridhii17.github.io/Portfolio/)
+
+## 🛠️ Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript, React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Tools**: Figma, Photoshop, VS Code
+
+## 📌 Features
+
+- **Home**: Introduction and navigation
+- **About Me**: Personal background and skills
+- **Skills**: Technical proficiencies and tools
+- **Projects**: Interactive AR/VR projects with links
+- **Contact**: Email and social media links
+
+
+## 🧪 Installation
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/ridhii17/Portfolio.git
+cd Portfolio
