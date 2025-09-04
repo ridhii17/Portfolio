@@ -8,13 +8,6 @@
 Explore the live version of my portfolio:  
 👉 [https://ridhii17.github.io/Portfolio/](https://ridhii17.github.io/Portfolio/)
 
-## 🛠️ Technologies Used
-
-- **Frontend**: HTML, CSS, JavaScript, React.js, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Tools**: Figma, Photoshop, VS Code
-
 ## 📌 Features
 
 - **Home**: Introduction and navigation
