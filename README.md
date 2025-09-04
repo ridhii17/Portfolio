@@ -1,4 +1,4 @@
-#Portfolio 
+# Portfolio 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue)](https://ridhii17.github.io/Portfolio/)
 Welcome to my personal portfolio showcasing my journey as a MERN Stack Developer and AR/VR enthusiast. This project demonstrates my skills in web development, 3D modeling, and immersive experiences.
 
