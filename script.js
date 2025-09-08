@@ -17,19 +17,14 @@ if (navClose) {
 // remove menu mobile
 const navLink = document.querySelectorAll(".nav-link");
 
-
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
   navMenu.classList.remove("show-menu");
-  // Remove active class from all links
-  navLink.forEach((n) => n.classList.remove("active-link"));
-  // Add active class to clicked link
-  this.classList.add("active-link");
 }
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-// qualifications tabs
+// qualifi
 const tabs = document.querySelectorAll("[data-target]"),
   tabContents = document.querySelectorAll("[data-content]");
 
