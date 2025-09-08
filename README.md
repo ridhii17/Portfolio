@@ -16,6 +16,11 @@ Explore the live version of my portfolio:
 - **Projects**: Interactive AR/VR projects with links
 - **Contact**: Email and social media links
 
+## 🛠️ Technologies Used
+
+- HTML
+- CSS
+- JavaScript
 
 ## 🧪 Installation
 
