@@ -78,10 +78,13 @@ body.dark-theme {
   color: var(--title-color);
   margin-right: 1rem;
   cursor: pointer;
+  transition: 0.3s ease-in;
+  margin: 0;
 }
 
 .change-theme:hover {
   color: var(--first-color);
+  transform: translateY(-2px);
 }
 
 /* theme transition  */
@@ -98,17 +101,20 @@ body.dark-theme {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
-  margin: var(--header-height) 0 0 0;  /* ✅ top margin equal to header height */
+  margin: var(--header-height) 0 0 0; /* ✅ top margin equal to header height */
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
   transition: 0.3s ease-in;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
-
 
 h1,
 h2,
@@ -116,14 +122,21 @@ h3,
 h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+
+  margin: 0;
 }
 
 ul {
-  list-style: none;
+  list-style: none; /* remove default list style */
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease-in;
+  transform: translateY(-2px);
 }
 
 img {
@@ -138,6 +151,12 @@ img {
 
 .section-title {
   font-size: var(--h1-font-size);
+  margin-bottom: var(--margin-bottom-0-1);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  text-transform: uppercase;
+  text-align: center;
+
 }
 
 .section-subtitle {
@@ -156,11 +175,21 @@ img {
   max-width: 768px;
   margin-left: var(--margin-bottom-0-1-5);
   margin-right: var(--margin-bottom-0-1-5);
+  transition: 0.3s ease-in;
+
+  @media screen and (min-width: 968px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 .grid {
   display: grid;
   gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  align-items: center;
+
 }
 
 .header {
@@ -170,10 +199,15 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  transition: 0.3s ease-in;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+
 }
 
 .scroll-header {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+
 }
 
 .nav {
@@ -205,19 +239,18 @@ img {
 
 @media screen and (max-width: 767px) {
   .nav-menu {
-  position: fixed;
-  top: 0;
-  right: -100%;      /* hidden by default */
-  width: 70%;
-  height: 100%;
-  background: var(--body-color);
-  transition: 0.3s;
-  z-index: var(--z-fixed);
-}
-.nav-menu.show-menu {
-  right: 0;          /* show menu */
-}
-
+    position: fixed;
+    top: 0;
+    right: -100%; /* hidden by default */
+    width: 70%;
+    height: 100%;
+    background: var(--body-color);
+    transition: 0.3s;
+    z-index: var(--z-fixed);
+  }
+  .nav-menu.show-menu {
+    right: 0; /* show menu */
+  }
 }
 
 .nav-list {
@@ -315,9 +348,9 @@ img {
   margin-bottom: var(--margin-bottom-0-2);
 }
 
-.home-scroll {
+/* .home-scroll {
   /* display: none; */
-}
+ */
 
 .home-scroll-button {
   color: var(--first-color);
@@ -352,6 +385,15 @@ img {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
+  transition: 0.3s;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-decoration: none;
+
 }
 .button:hover {
   background-color: var(--first-color-alt);
@@ -533,8 +575,6 @@ img {
   color: #5b0888;
 }
 
-
-
 .active-box {
   opacity: 1;
   visibility: visible;
@@ -624,7 +664,6 @@ img {
   justify-self: center;
 }
 
-
 /* contact section  */
 .contact-container {
   row-gap: 3rem;
@@ -680,9 +719,9 @@ img {
   flex-direction: column;
   row-gap: 1.5rem;
 }
-.footer-link {
+/* .footer-link {
   /* hii  */
-}
+ */
 .footer-link:hover {
   color: var(--first-color-lighter);
 }
@@ -779,12 +818,9 @@ img {
     gap: 0.5rem;
   }
 
-
   .project-img {
     width: 200px;
   }
-
-  
 }
 
 /* medium devices */
@@ -918,8 +954,6 @@ img {
     grid-template-columns: 0.5fr;
   }
 
-
-
   .portfolio-img {
     width: 320px;
   }
@@ -985,7 +1019,6 @@ img {
   .home-social {
     transform: translateX(-6rem);
   }
-
 
   .portfolio-content {
     column-gap: 5rem;
